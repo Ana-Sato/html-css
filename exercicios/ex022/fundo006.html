@@ -6,12 +6,19 @@
     <title>Imagem de Fundo</title>
     <style>
         body {
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */ 
 
+            /* Shorthand- background
+            color>image> positio > repeat > [size] > attachament
+            
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
