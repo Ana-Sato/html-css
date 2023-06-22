@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <!--
+        Parametro REQUIRED(dentro da tag input) para nao enviar sem preencher;
+        Parametro MINLENGTH(dentro da tag input) para determinar numero minimo de caracteres;
+        Parametro MAXLENGTH(dentro da tag input) para determinar numero maximo de caracteres;
+        Parametro SIZE(dentro da tag input) para determinar o tamanho da caixa mostrada com base no num de caracteres;
+        Parametro PLACEHOLDER(dentro da tag input) para informar dicas na caixa;
+        Parametro AUTOCOMPLET(dentro da tag input) para informar o tipo de caixa;Para funcionar tem que usar o parametro tbm na tag FORM no "on".
+
+    -->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome do Usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" placeholder="Min 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
