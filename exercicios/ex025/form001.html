@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulario</h1>
+    <!--
+        Para criar o formulario use a tag FORM;
+        para criar o texto tag P;
+        Para criar a caixa onde se coloca o texto usa-se INPUT-TEXT;
+        Para relacionar a caixa com o titulo que vai no paragrafo usa-se LABEL no for"" coloca-se o id do INPUT.
+        Action dentro da tag form para mandar o formulario;
+        AUTOCOMPLET "off" para nao sugerir.
+        METHOD="post" para oculpar os itens do formuloario da url(dados).Oculta somente na url, nao protege os dados.
+    -->
+    <form action="cadastro.php" method="post">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
