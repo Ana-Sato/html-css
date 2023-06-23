@@ -51,7 +51,7 @@ menu > ul > li > a {
     border-top: 2px solid rgb(148, 148, 148);
 }
 main {
-    width: 90vh;
+    width: 90vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;
@@ -67,4 +67,5 @@ article > p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+
 }
